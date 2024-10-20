@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/peplink-application-project.github.io/static/css/main.98ec47ca.css",
-    "main.js": "/peplink-application-project.github.io/static/js/main.ca0560f3.js",
+    "main.js": "/peplink-application-project.github.io/static/js/main.a6935310.js",
     "index.html": "/peplink-application-project.github.io/index.html",
     "main.98ec47ca.css.map": "/peplink-application-project.github.io/static/css/main.98ec47ca.css.map",
-    "main.ca0560f3.js.map": "/peplink-application-project.github.io/static/js/main.ca0560f3.js.map"
+    "main.a6935310.js.map": "/peplink-application-project.github.io/static/js/main.a6935310.js.map"
   },
   "entrypoints": [
     "static/css/main.98ec47ca.css",
-    "static/js/main.ca0560f3.js"
+    "static/js/main.a6935310.js"
   ]
 }
