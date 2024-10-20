@@ -1,17 +1,17 @@
 export const CSSMediaSize = {
-  phone_small:
+	phone_small:
     "@media only screen and (max-width: 400px)",
-  phone:
+	phone:
     "@media only screen and (max-width: 600px)",
-  phone_big:
+	phone_big:
     "@media only screen and (max-width: 768px)",
-  tablet:
+	tablet:
     "@media only screen and (max-width: 992px)",
-  pc_small:
+	pc_small:
     "@media only screen and (max-width: 1366px)",
-  pc: "@media only screen and (max-width: 1440px)",
-  pc_big:
+	pc: "@media only screen and (max-width: 1440px)",
+	pc_big:
     "@media only screen and (max-width: 1536px)",
-  pc_huge:
+	pc_huge:
     "@media only screen and (max-width: 1600px)",
 };

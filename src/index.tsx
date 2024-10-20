@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Index from "./pages";
 import { ToastContainer } from "react-toastify";
 import GlobalStyle from "./style";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 // Change toast color
 const toastStyle: React.CSSProperties = { background: "default" };
@@ -14,11 +14,11 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <React.StrictMode>
-    <GlobalStyle />
-    <ToastContainer toastStyle={toastStyle} position="bottom-left" />
-    <BrowserRouter>
-      <Index />
-    </BrowserRouter>
-  </React.StrictMode>
+	<React.StrictMode>
+		<GlobalStyle />
+		<ToastContainer toastStyle={toastStyle} position="bottom-left" />
+		<HashRouter>
+			<Index />
+		</HashRouter>
+	</React.StrictMode>
 );

@@ -3,19 +3,19 @@ import styled from "styled-components";
 import { NModals, changeModals } from "../modals";
 
 const ModalLayout = (props: NModalLayout.IProps) => {
-  const { children, name } = props;
+	const { children, name } = props;
 
-  const closeModal: React.MouseEventHandler<HTMLDivElement> = (event) => {
-    if(event.currentTarget === event.target) {
-      window.dispatchEvent(changeModals({ [name]: null }));
-    }
-  };
+	const closeModal: React.MouseEventHandler<HTMLDivElement> = (event) => {
+		if(event.currentTarget === event.target) {
+			window.dispatchEvent(changeModals({ [name]: null }));
+		}
+	};
 
-  return <ModalLayoutStyle className='Modal' onClick={closeModal}>
-    <div className='modal_inner'>
-      {children}
-    </div>
-  </ModalLayoutStyle>;
+	return <ModalLayoutStyle className='Modal' onClick={closeModal}>
+		<div className='modal_inner'>
+			{children}
+		</div>
+	</ModalLayoutStyle>;
 };
 
 export { ModalLayout };
@@ -43,5 +43,11 @@ const ModalLayoutStyle = styled.div`
 		border-radius: 5px;
 		position: relative;
 		box-shadow: 0 0 15px var(--c-p1);
+	}
+
+	@media (max-width: 500px) {
+		.modal_inner {
+			min-width: 0;
+		}
 	}
 `;

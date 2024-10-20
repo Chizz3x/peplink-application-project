@@ -32,11 +32,11 @@
 		"no-delete-var": "off",
 		"indent": [
 			"warn",
-			2
+			"tab"
 		],
 		"linebreak-style": [
 			"warn",
-			"windows"
+			"unix"
 		],
 		"quotes": [
 			"warn",

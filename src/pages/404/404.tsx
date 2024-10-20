@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Page404 = () => {
-  return (
-    <Page404Style id="P404">
+	return (
+		<Page404Style id="P404">
       404
-    </Page404Style>
-  );
+		</Page404Style>
+	);
 };
 
 export { Page404 };

@@ -9,24 +9,24 @@ const env = dotenv.config({ path: path.resolve(".env") }).parsed || {};
 const OUTPUT_FILE = path.resolve("public", "sitemap.xml");
 
 (async () => {
-  const prettierConfig = await prettier.resolveConfig(".prettierrc.json");
+	const prettierConfig = await prettier.resolveConfig(".prettierrc.json");
 
-  const sitemap = await prettier.format(
-    `
+	const sitemap = await prettier.format(
+		`
 			<?xml version="1.0" encoding="UTF-8"?>
 			<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 				${Object.values(ROUTES).map(route => `<url>
-					<loc>${path.posix.join(env.PUBLIC_URL, "?", route)}</loc>
+					<loc>${path.posix.join(env.REACT_APP_PUBLIC_URL, "?", route)}</loc>
 				</url>`).join("\n")}
 			</urlset>
 		`,
-    {
-      ...prettierConfig,
-      parser: "html" 
-    }
-  );
+		{
+			...prettierConfig,
+			parser: "html" 
+		}
+	);
 	
-  fs.writeFileSync(OUTPUT_FILE, sitemap);
+	fs.writeFileSync(OUTPUT_FILE, sitemap);
 	
-  console.log(`Sitemap written at ${OUTPUT_FILE}`);
+	console.log(`Sitemap written at ${OUTPUT_FILE}`);
 })();
