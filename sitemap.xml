@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https:/chizz3x.github.io/peplink-application-project.github.io/?/</loc>
+  </url>
+  <url>
     <loc
-      >https:/chizz3x.github.io/peplink-application-project.github.io/?/#/</loc
+      >https:/chizz3x.github.io/peplink-application-project.github.io/?/first-page</loc
     >
   </url>
   <url>
     <loc
-      >https:/chizz3x.github.io/peplink-application-project.github.io/?/#/first-page</loc
-    >
-  </url>
-  <url>
-    <loc
-      >https:/chizz3x.github.io/peplink-application-project.github.io/?/#/second-page</loc
+      >https:/chizz3x.github.io/peplink-application-project.github.io/?/second-page</loc
     >
   </url>
 </urlset>
